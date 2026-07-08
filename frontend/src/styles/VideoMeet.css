@@ -1,0 +1,209 @@
+.universalContainer {
+  margin: 0;
+  height: 100vh;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(120, 90, 255, 0.25),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(0, 200, 255, 0.12),
+      transparent 50%
+    ),
+    #05060a;
+}
+
+.lobbyContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  gap:25%;
+  padding: 100px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.left > .nav-header {
+  color: rgba(211, 154, 83, 0.811);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+.alone-message {
+  position: absolute;
+  color: rgba(211, 154, 83, 0.811);
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  margin: 10% 50%;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  padding: 12px;
+  height: 100vh;
+  background: #111;
+  z-index: 1;
+}
+
+.video-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: black;
+}
+
+.video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.selfVideo {
+  position: fixed;
+  width: 16%;
+  height: 20%;
+  bottom: 2.5%;
+  left: 2.5%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  z-index: 2;
+}
+.selfVideo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  color: wheat;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.controls.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.control-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 0 10px;
+}
+
+.control-button.active {
+  background: #3c4043; /* Dark gray like Google Meet */
+  color: white;
+}
+
+.control-button.inactive {
+  background: #d93025; /* Red when camera/mic is off */
+  color: white;
+}
+
+.control-button:hover {
+  transform: scale(1.05);
+}
+.chatWindow {
+  position: absolute;
+  right: 20px;
+  width: 360px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #1d1f27;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+  z-index: 100;
+}
+.chat-header {
+  height: 65px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #242731;
+  border-bottom: 1px solid #353844;
+}
+.chat-header h3 {
+  color: white;
+  font-weight: 600;
+  margin: 0;
+}
+.close-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  transition: 0.2s;
+}
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.chat-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 18px;
+  background: #1b1d25;
+}
+.chat-area::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-area::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+.chat-placeholder {
+  color: #888;
+  text-align: center;
+  margin-top: 30px;
+}
+.chat-input {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: #242731;
+  border-top: 1px solid #353844;
+}
+.chat-input .MuiTextField-root {
+  background: white;
+  border-radius: 8px;
+}

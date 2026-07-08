@@ -1,0 +1,74 @@
+.LandingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.LandingPageContainer nav {
+  padding-inline: 4rem;
+  padding-block: 3rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.LandingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.LandingPageContainer nav .navList {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  gap: 3rem;
+}
+.navList p {
+  padding: 12px 0;
+}
+.LandingMainContainer {
+  display: flex;
+  padding-inline: 3rem;
+  justify-content: space-between;
+  height: 50vh;
+  align-items: center;
+}
+.LandingPageContainer > div :nth-child(1) h1 {
+  font-size: 3rem;
+}
+.LandingPageContainer > div :nth-child(1) p {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+}
+.image-container {
+  height: 70vh;
+  margin-top: 10rem;
+}
+
+.image-container img {
+  height: 100%;
+  width: auto;
+}
+.btn {
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.btn:visited,
+.btn:link {
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #e69500;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+}

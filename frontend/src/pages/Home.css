@@ -1,0 +1,136 @@
+.HomePageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  z-index: 2;
+}
+.nav-header {
+  margin: 1rem;
+  font-size: 2rem;
+}
+.button {
+  margin: 1rem 1.2rem;
+  padding: 0.9rem 2rem;
+  background: linear-gradient(135deg, #cf8113, #ecc02f);
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.button:hover {
+  box-shadow: 0 0 20px rgba(124, 92, 255, 0.4);
+  background: linear-gradient(135deg, #cf81138c, #ecc02f7b);
+}
+.meeting-window {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  margin-top: 10%;
+}
+.meetingPanel {
+  width: 40%;
+  height: 50%;
+  position: relative;
+  left: 0;
+  /* background: radial-gradient(
+  circle at top left,
+  rgba(120, 90, 255, 0.25),
+  transparent 40%
+),
+radial-gradient(
+  circle at bottom right,
+  rgba(0, 200, 255, 0.12),
+  transparent 50%
+),
+#05060a; */
+  color: white;
+  padding: 0rem 0.5rem;
+}
+.image-container {
+  margin-right: 4rem;
+  border-radius: 5%;
+}
+.image-container > img {
+  border-radius: 5%;
+}
+.meetingPanel > h2 {
+  margin: 1rem 1.2rem;
+}
+.history-container {
+  position: absolute;
+  right: 20px;
+  width: 20vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background: #1d1f27;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+  z-index: 100;
+  padding: 1rem 1.2rem;
+}
+.history-header {
+  height: 65px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #242731;
+  border-bottom: 1px solid #353844;
+}
+.history-header h2 {
+  color: white;
+  font-weight: 600;
+  margin: 0;
+}
+.close-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  transition: 0.2s;
+}
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.history-area {
+  flex: 1;
+  overflow-y: auto;
+  background: #1b1d25;
+}
+.history-area::-webkit-scrollbar {
+  width: 6px;
+}
+.history-area::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+.date-time{
+  display: flex;
+  justify-content: space-between;
+}
+.meetingCode{
+  border-bottom: 2px solid rgba(128, 115, 115, 0.884);
+  margin: 12px 0;
+  padding: 12px 0;
+}
+.heading{
+  align-self: center;
+  margin: 0.7rem 0;
+}

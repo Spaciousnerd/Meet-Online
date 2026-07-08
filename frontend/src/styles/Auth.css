@@ -1,0 +1,103 @@
+.AuthContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.AuthContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.AuthContainer nav {
+  padding-inline: 4rem;
+  padding-block: 3rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.AuthContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.AuthContainer nav .navList {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  gap: 3rem;
+}
+.navList div{
+  padding: 12px 0;
+}
+.authCard {
+    width: 420px;
+    margin: 60px auto;
+    background:#1B1B2F;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: #a5a4a451;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.tabs button.active {
+    background: orange;
+    color: white;
+}
+
+.forms {
+    position: relative;
+}
+
+.loginForm,
+.signupForm {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.show {
+    display: flex;
+}
+
+.forms input {
+    color:black;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.submitBtn {
+    margin-top: 10px;
+    padding: 12px;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submitBtn:hover {
+    background: #e69500;
+}
