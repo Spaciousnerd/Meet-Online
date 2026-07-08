@@ -1,7 +1,7 @@
 .HomePageContainer {
   width: 100vw;
   height: 100vh;
-  background: url("background.png");
+  background: url("/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -121,16 +121,16 @@ radial-gradient(
   background: #555;
   border-radius: 10px;
 }
-.date-time{
+.date-time {
   display: flex;
   justify-content: space-between;
 }
-.meetingCode{
+.meetingCode {
   border-bottom: 2px solid rgba(128, 115, 115, 0.884);
   margin: 12px 0;
   padding: 12px 0;
 }
-.heading{
+.heading {
   align-self: center;
   margin: 0.7rem 0;
 }

@@ -5,7 +5,7 @@ import VideoControls from "../components/VideoControls.jsx";
 import ChatWindow from "../components/ChatWindow.jsx";
 import io from "socket.io-client";
 // backend server link
-const server_URL = "http://localhost:8000";
+const server_URL = import.meta.env.VITE_BACKEND_URL;
 import withAuth from "../Utils.jsx";
 var connections = {};
 const peerConfigConnections = {
