@@ -10,7 +10,7 @@ const server = createServer(app);
 import dotenv from "dotenv";
 dotenv.config();
 const io = connectToSocket(server);
-app.set("port", process.env.PORT);
+app.set("port", process.env.PORT || 8000);
 app.set("MONGO_URL", process.env.MONGO_URL);
 app.use(helmet());
 app.use(cors());
