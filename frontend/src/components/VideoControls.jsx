@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/videoMeet.css";
+import "../styles/VideoMeet.css";
 import VideocamIcon from "@mui/icons-material/Videocam";
 import VideocamOffIcon from "@mui/icons-material/VideocamOff";
 import MicNoneIcon from "@mui/icons-material/MicNone";
@@ -20,7 +20,7 @@ export default function VideoControls({
   askForUsername,
 }) {
   return (
-    <div className="videoControls" >
+    <div className="videoControls">
       <button onClick={onToggleVideo} className="control-button">
         {isVideoEnabled ? <VideocamIcon /> : <VideocamOffIcon />}
       </button>
